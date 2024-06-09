@@ -1,90 +1,77 @@
-# Kalp Krizi Veri Seti Analizi ve Makine Öğrenimi
+## Heart Attack Data Set Analysis and Machine Learning
 
-Bu projenin temel amacı, kalp krizi riskini tahmin edebilen bir
-makine öğrenimi modeli geliştirmektir. 
+The main aim of this project is to develop a machine learning model capable of predicting the risk of a heart attack.
 
-Bu kapsamda, Kaggle’da bulunan "Heart Attack Analysis & Prediction Dataset" veri seti kullanılarak, 
-bireylerin çeşitli sağlık parametreleri analiz edilecek ve bu parametrelerin kalp krizi riski üzerindeki etkisi değerlendirilecektir.
+Within this scope, the "Heart Attack Analysis & Prediction Dataset" available on Kaggle will be utilized to analyze various health parameters of individuals, and the impact of these parameters on the risk of heart attack will be evaluated.
 
-# Proje Aşamaları
+# Project Stages
 
-1 - Veri keşfi ve Ön işleme - 3 adımdan oluşur bunlar: Veri Setinin anlaşılması, Veri Temizleme, Veri dönüştürmedir.
+1 - Data Exploration and Preprocessing - Consists of 3 steps: Understanding the Dataset, Data Cleaning, and Data Transformation.
 
-2 - Veri Analizi ve Görselleştirme - 2 Aşamadan oluşur Keşifsel Veri Analizi (EDA) ve Korelasyon Analizi
+2 - Data Analysis and Visualization - Consists of 2 stages: Exploratory Data Analysis (EDA) and Correlation Analysis.
 
-3 - Aykırı Değerleri Bulma ve Veri setini temizleme
+3 - Detection of Outliers and Data Cleaning
 
-4 - Model Geliştirme - 3 Aşamadan oluşur bunlar: Model Seçimi , Model Eğitimi ve Hiperparametre Optimizasyonu
+4 - Model Development - Consists of 3 stages: Model Selection, Model Training, and Hyperparameter Optimization.
 
-5 - Model Değerlendirme ve Test - 3 Aşamadan oluşur : Model Performans Ölçüleri, Çapraz Doğrulama ve Son model seçimi
+5 - Model Evaluation and Testing - Consists of 3 stages: Model Performance Metrics, Cross-Validation, and Final model selection.
 
-6 - Sonuçlar - Modelin uygulanabilirliği kontrol edilir. Model eğer sağlık alanında uygulanabilirse seçilir.
+6 - Results - The applicability of the model is verified. If the model is applicable in the health domain, it is selected.
 
 <div align="center">
 <img width="133" alt="path" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/e7a9874e-de57-44ee-aeaf-8db913297e9b">
 </div>
 
-# Veri Seti Hakkında Bilgi
+# Information about the Dataset
 
-Veri Setimizde toplam 13 farklı değişken var. Bunlar: 
+There are a total of 13 different variables in our dataset. These are:
 
-1 - age - yaş (yıl cinsinden)
+1 - age - age (in years)
 
-2 - sex - cinsiyet (1 = erkek; 0 = kadın)
+2 - sex - gender (1 = male; 0 = female)
 
-3- cp - göğüs ağrısı tipi (1 = tipik anjina; 2 = atipik anjina; 3 = anjin
-dışı ağrı; 0 = semptomsuz)
+3 - cp - chest pain type (1 = typical angina; 2 = atypical angina; 3 = non-anginal pain; 0 = asymptomatic)
 
-4 - trestbps - dinlenme kan basıncı (hastaneye kabulde mm Hg
-cinsinden)
+4 - trestbps - resting blood pressure (in mm Hg on admission to the hospital)
 
-5 - chol - serum kolesterolü (mg/dl cinsinden)
+5 - chol - serum cholesterol (in mg/dl)
 
-6 - fbs - açlıkkan şekeri > 120 mg/dl (1 = doğru; 0 = yanlış)
+6 - fbs - fasting blood sugar > 120 mg/dl (1 = true; 0 = false)
 
-7 - restecg - dinlenme elektrokardiyografik sonuçlar (1 = normal; 2
-= ST-T dalgası anormalliği; 0 = hipertrofi)
+7 - restecg - resting electrocardiographic results (1 = normal; 2 = having ST-T wave abnormality; 0 = hypertrophy)
 
-8 - thalach - ulaşılan maksimum kalp atış hızı
+8 - thalach - maximum heart rate achieved
 
-9 - exang - egzersize bağlı anjina (1 = evet; 0 = hayır)
+9 - exang - exercise-induced angina (1 = yes; 0 = no)
 
-10 - oldpeak - dinlenmeye göre egzersizle indüklenen ST
-depresyonu
+10 - oldpeak - ST depression induced by exercise relative to rest
 
-11 - slope - zirve egzersiz ST segmentinin eğimi (2 = yukarı doğru
-eğimli; 1 = düz; 0 = aşağı doğru eğimli)
+11 - slope - the slope of the peak exercise ST segment (2 = upsloping; 1 = flat; 0 = downsloping)
 
-12 - ca - florosopi ile renklendirilen ana damar sayısı (0-3)
+12 - ca - number of major vessels colored by fluoroscopy (0-3)
 
-13 - thal - 2 = normal; 1 = sabit kusur; 3 = düzeltilebilir kusur
+13 - thal - 2 = normal; 1 = fixed defect; 3 = reversible defect
 
-14 - num - tahmin edilen özellik - kalp hastalığı teşhisi (anjyografik
-hastalık durumu) (Değer 0 = < çap daralması; Değer 1 = > %50 çap
-daralması)
+14 - num - target feature - diagnosis of heart disease (angiographic disease status) (Value 0 = < 50% diameter narrowing; Value 1 = > 50% diameter narrowing)
 
-# Model Karşılaştırılması
+
+# Model Comparison
 
 <img width="796" alt="Ekran Resmi 2024-06-09 16 33 04" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/9d6d5f1a-bc3a-48c9-8b16-240932e8f080">
 
-# Proje Sonucu
+# Project Outcome
 
-Logistic Regresyon, Karar Ağaçları, Destek Vektör Makineleri ve Rastgele Orman algoritmaları kullanılarak modeller oluşturulur ve doğruluk skorları hesaplanır. Çapraz doğrulama (cross-validation) kullanılarak modellerin performansını değerlendirdik.
-Proje Kapsamında Gerçekleştirdiğimiz faaliyetler listesi:
+Models are created using Logistic Regression, Decision Trees, Support Vector Machines, and Random Forest algorithms, and accuracy scores are calculated. We evaluated the performance of the models using cross-validation.
+List of activities carried out within the scope of the project:
 
-1. Proje kapsamında öncelikle veri setini Keşifsel Veri Analizi
-(EDA) için hazır hale getirdik.
-2. Keşifsel Veri Analizi (EDA) gerçekleştirdik. Exploratory Data Analysis.
-3. Tek değişkenli analiz kapsamında sayısal ve kategorik
-değişkenleri Distplot ve yuvarlak Grafiklerle analiz ettik.
-4. İki değişkenli analiz kapsamında değişkenleri birbiri arasında
-FacetGrid, Sayım Grafiği, Çift Grafiği, Sürücü Grafiği, Kutu
-Grafiği ve Isı Haritası grafikleri kullanarak analiz ettik.
-5. Veri setini model için hazır hale getirdik. Bu bağlamda, eksik ve aykırı değerlerle mücadele ettik.
-6. Model aşamasında dört farklı algoritma kullandık.
-7. Lojistik Regresyon modeli ile %87 doğruluk ve %88 AUC elde ettik.
-8. Karar Ağacı Modeli ile %83 doğruluk ve %85 AUC elde ettik.
-9. Destek Vektör Sınıflandırıcı Modeli ile %83 doğruluk ve %89 AUC elde ettik.
-10. Ve Rastgele Orman Sınıflandırıcı Modeli ile %90.3 doğruluk ve %93 AUC elde ettik..
-11. Tüm bu model çıktıları değerlendirildiğinde, en iyi sonuçları veren Rastgele Orman Algoritması ile oluşturduğumuz modeli tercih ettik.
-
+1 - Firstly, we prepared the dataset for Exploratory Data Analysis (EDA).
+2 - We conducted Exploratory Data Analysis (EDA).
+3 - Within the scope of univariate analysis, we analyzed numerical and categorical variables using Distplot and Circular Charts.
+4 - Within the scope of bivariate analysis, we analyzed variables using FacetGrid, Countplot, Pairplot, Swarmplot, Boxplot, and Heatmap.
+5 - We prepared the dataset for modeling. In this context, we dealt with missing and outlier values.
+6 - We used four different algorithms in the modeling stage.
+7 - We achieved 87% accuracy and 88% AUC with the Logistic Regression model.
+8 - We achieved 83% accuracy and 85% AUC with the Decision Tree Model.
+9 - We achieved 83% accuracy and 89% AUC with the Support Vector Classifier Model.
+10 - And we achieved <b>90.3% accuracy and 93% AUC with the Random Forest Classifier Model </b>.
+11 - Considering all these model outputs, we preferred the model created with the Random Forest Algorithm, which provided the best results.
