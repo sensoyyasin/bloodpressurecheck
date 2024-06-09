@@ -60,7 +60,7 @@ def predict_func(metin):
     return tahmin[0]
 
 # Fonksiyonu test et
-test_metin = "Programlama kötü"
+test_metin = "Programlama seviyorum"
 tahmin_edilen_duygu = predict_func(test_metin)
 print(f"'{test_metin}' metninin duygu durumu {tahmin_edilen_duygu}")
 
