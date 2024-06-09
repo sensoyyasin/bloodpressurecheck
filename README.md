@@ -20,9 +20,8 @@ bireylerin çeşitli sağlık parametreleri analiz edilecek ve bu parametrelerin
 
 6 - Sonuçlar - Modelin uygulanabilirliği kontrol edilir. Model eğer sağlık alanında uygulanabilirse seçilir.
 
-
 <div align="center">
-  <img width="133" alt="path" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/2ed4dfd2-7edb-4671-a206-             4392f5c4925f">
+<img width="133" alt="path" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/e7a9874e-de57-44ee-aeaf-8db913297e9b">
 </div>
 
 # Veri Seti Hakkında Bilgi
