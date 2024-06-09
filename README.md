@@ -22,9 +22,8 @@ bireylerin çeşitli sağlık parametreleri analiz edilecek ve bu parametrelerin
 
 
 <div align="center">
-  <img width="150" alt="Ekran Resmi 2024-06-09 16 31 46" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/6ea7aa6c-265c-40a7-ad02-    03a9cb64ac8e">
+  <img width="133" alt="path" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/2ed4dfd2-7edb-4671-a206-             4392f5c4925f">
 </div>
-
 
 # Veri Seti Hakkında Bilgi
 
