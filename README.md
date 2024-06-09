@@ -9,18 +9,13 @@ bireylerin çeşitli sağlık parametreleri analiz edilecek ve bu parametrelerin
 # Proje Aşamaları
 
 1 - Veri keşfi ve Ön işleme - 3 adımdan oluşur bunlar: Veri Setinin anlaşılması, Veri Temizleme, Veri dönüştürmedir.
-
 2 - Veri Analizi ve Görselleştirme - 2 Aşamadan oluşur Keşifsel Veri Analizi (EDA) ve Korelasyon Analizi
-
 3 - Aykırı Değerleri Bulma ve Veri setini temizleme
-
 4 - Model Geliştirme - 3 Aşamadan oluşur bunlar: Model Seçimi , Model Eğitimi ve Hiperparametre Optimizasyonu
-
 5 - Model Değerlendirme ve Test - 3 Aşamadan oluşur : Model Performans Ölçüleri, Çapraz Doğrulama ve Son model seçimi
-
 6 - Sonuçlar - Modelin uygulanabilirliği kontrol edilir. Model eğer sağlık alanında uygulanabilirse seçilir.
 
-<img width="133" alt="Ekran Resmi 2024-06-09 16 31 46" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/6ea7aa6c-265c-40a7-ad02-03a9cb64ac8e">
+<img width="300" alt="Ekran Resmi 2024-06-09 16 31 46" src="https://github.com/sensoyyasin/heartdisease_prediction/assets/73845925/6ea7aa6c-265c-40a7-ad02-03a9cb64ac8e">
 
 
 # Veri Seti Hakkında Bilgi
