@@ -65,13 +65,23 @@ Models are created using Logistic Regression, Decision Trees, Support Vector Mac
 List of activities carried out within the scope of the project:
 
 1 - Firstly, we prepared the dataset for Exploratory Data Analysis (EDA).
+
 2 - We conducted Exploratory Data Analysis (EDA).
+
 3 - Within the scope of univariate analysis, we analyzed numerical and categorical variables using Distplot and Circular Charts.
+
 4 - Within the scope of bivariate analysis, we analyzed variables using FacetGrid, Countplot, Pairplot, Swarmplot, Boxplot, and Heatmap.
+
 5 - We prepared the dataset for modeling. In this context, we dealt with missing and outlier values.
+
 6 - We used four different algorithms in the modeling stage.
-7 - We achieved 87% accuracy and 88% AUC with the Logistic Regression model.
-8 - We achieved 83% accuracy and 85% AUC with the Decision Tree Model.
-9 - We achieved 83% accuracy and 89% AUC with the Support Vector Classifier Model.
+
+7 - We achieved <b>87% accuracy and 88% AUC with the Logistic Regression model</b>.
+
+8 - We achieved <b>83% accuracy and 85% AUC with the Decision Tree Model</b>.
+
+9 - We achieved <b>83% accuracy and 89% AUC with the Support Vector Classifier Model</b>.
+
 10 - And we achieved <b>90.3% accuracy and 93% AUC with the Random Forest Classifier Model </b>.
-11 - Considering all these model outputs, we preferred the model created with the Random Forest Algorithm, which provided the best results.
+
+11 - Considering all these model outputs, <b>we preferred the model created with the Random Forest Algorithm, which provided the best results</b>.
